@@ -1,11 +1,169 @@
+<!-- 
+Esto es zona de comentarios
+-->
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+	<title>APES your analytical and prediction partner</title>
+	<link rel="icon" href="IMG/logomonito.svg">
+	
+	<link rel="stylesheet" href="../CSS/normalize.css">
+
+	<!-- <link rel="stylesheet" href="../CSS/icomoon.css"> -->
+
+
+
+	<link rel="stylesheet" href="CSS/style-content.css">  
 </head>
 <body>
-	<h1>hola</h1>
+ 
+<header>
+	<div id="branding">
+		 
+		 <img  id= "logo" src="IMG/logoApes.svg" alt=" start-up"> 
+		 <a href="home.html"> <h1>APES</h1> </a>  
+	</div>
+
+	<nav id="menu">
+			 <ul>
+				<li ><a  class="a_home" href="home.html">Home</a></li>
+				<li ><a id="noticias" href="noticias.html">News</a></li>
+				<li ><a id="foro" href="foro.html">Forum</a></li>
+				
+			</ul> 
+		
+
+	</nav>
+
+	<div id="login">
+	  	 <!-- <form action="/action_page.php"> original de w3school  -->
+	  	<form>
+      		
+      		<input id="usuario" type="text" placeholder="Username" > 
+      		<input type="password" placeholder="Password" name="psw">
+      		<button type="submit" onclick="check_login()">Login</button>
+      		<button type="submit" onclick="active_login()">Sign-up</button>
+    	</form>
+    	<div id="logueado">
+    		<img src="IMG/login.svg" alt="">
+    	</div>
+ 
+
+
+
+	</div>
+	
+</header>
+<div id="container"> 
+
+
+	<div id="contenido">
+
+	  	<aside   id="nav_lateral">
+	  		<div id="nav_s" class="item"></div>
+	  		<div id="btn_free" class="item"> 
+	  			<button onclick ="active_canvas('user_stats')">User Stats</button>
+	  			<button onclick ="active_canvas('user_games')">User Games</button>
+	  			<button onclick ="active_canvas('pro_stats')">Pro Stats</button>
+
+	  			<button onclick ="active_canvas('pro_games')">Pro Games</button>
+	  		</div>
+
+	  	 	<div id="btn_premium" class="item">
+	  			<button onclick ="active_canvas('predictions')">Pro Games predictions</button>
+	  		</div>
+	  	
+	  		 
+	  		<div id="publicidad" ><legend> Ads</legend>
+	  			 <iframe class="publi" src="https://www.youtube.com/embed/SlIvBGe6FiI" title="Mundial 2023 | Explicación del formato" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
+	  			<!-- 
+	  			 <iframe class="publi" src="https://www.youtube.com/watch?v=yw-o8ZdmGKo" title="EOI " frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+	  			-->
+
+	  		</div>	
+ 
+
+ 
+
+	  		
+
+	  	
+	  	</aside>
+	  	
+	  	<div id="canvas">
+	  	
+	  		<div id="user_stats">
+	  			<iframe title="Report Section" class="powerbi" src="https://app.powerbi.com/view?r=eyJrIjoiZjIyMDJmODEtYmUwZi00OTZlLWJhNWEtNjA5NTczYjIzMDg1IiwidCI6IjMwNzcxYWRkLTZiMWUtNDAwZS1iZTNiLWU2ZTg1NzhlNjlkMSIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
+	  		</div>
+	  		<div id="user_games" >
+	  			<iframe title="Report Section" class="powerbi" src="https://app.powerbi.com/view?r=eyJrIjoiMWE4YzkxZGUtMDE1NC00MjFjLWFhNTItYzYyZTU3ZDRkYjVkIiwidCI6IjMwNzcxYWRkLTZiMWUtNDAwZS1iZTNiLWU2ZTg1NzhlNjlkMSIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
+
+	  		</div>
+	  		<div id="pro_stats" >
+	  			<iframe title="Report Section"   class="powerbi" src="https://app.powerbi.com/view?r=eyJrIjoiYTM3NDg1MTMtYzI4NS00NTVhLTgwMzYtNTYzY2UxZjA2NTNiIiwidCI6IjMwNzcxYWRkLTZiMWUtNDAwZS1iZTNiLWU2ZTg1NzhlNjlkMSIsImMiOjl9"  frameborder="0" allowFullScreen="true"></iframe>
+	  		</div>
+	  		<div id="pro_games" >
+	  			<iframe title="Report Section" class="powerbi" src="https://app.powerbi.com/view?r=eyJrIjoiOTcwNjE4NzQtY2JmMy00ODNlLTk0MGEtODk2YTA2OGZmOTA3IiwidCI6IjMwNzcxYWRkLTZiMWUtNDAwZS1iZTNiLWU2ZTg1NzhlNjlkMSIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
+	  		</div>
+	  			
+	  		<div id="predictions" >
+	  		 	<iframe title="Report Section" class="powerbi" src="https://app.powerbi.com/view?r=eyJrIjoiMjJhZjU2MjQtNDUwNC00NDI2LTg0YWUtNmQ4ZTc2ZWFiZmY0IiwidCI6IjMwNzcxYWRkLTZiMWUtNDAwZS1iZTNiLWU2ZTg1NzhlNjlkMSIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
+			</div>
+		</div>
+	</div>
+	
+	<div id="id01" class="modal">
+  
+  		 <!-- <form class="modal-content animate" action="/action_page.php" method="post">  -->
+  		
+   		<form class="modal-content animate" >
+    		<div class="imgcontainer">
+      			<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>  
+      			<img src="IMG/logoApes.svg" alt="Logo" class="logo_login">
+    		</div>
+
+    		<div class="container">
+      			<!-- <label for="uname"><b>Username</b></label> -->
+      			<input type="text" placeholder="Enter Username" name="uname" required>
+
+      			<!-- <label for="psw"><b>Password</b></label> -->
+      			<input type="password" placeholder="Enter Password" name="psw" required>
+        
+      			<button type="submit">Login</button>
+      			<!-- <label>
+        		<input type="checkbox" checked="checked" name="remember"> Remember me
+      			</label> -->
+    		</div>
+
+    		<div class="container" style="background-color:#f1f1f1">
+      			<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      			<span class="psw">Forgot <a href="#">password?</a></span>
+    		</div>
+  		</form>
+
+	</div>
+
+
+</div>	
+	 
+ 	<footer class="footer_display">
+		<p id="copyright" >@2023 APES.Sl</p>	
+		<div id="footer_middle">
+				
+			<p class="text_footer"><a id="cookies" href="cookies.html"  >Cookies</a></p>
+		 
+		</div>
+		<p id="who" ><a id="a_who" href="quienes_somos.html" target="_blank" >About us</a></p>
+	</footer>
+	  
+
+
+<script src="SCRIPTS/scripts.js"></script>
 </body>
 </html>
+
+	
+	
