@@ -1,5 +1,5 @@
 
-let login = false;
+// let login = false;
 
 
 function active_canvas  (ide) {
@@ -17,36 +17,36 @@ function active_canvas  (ide) {
 }
 
 
-function active_login (){
+// function active_login (){
 
-    var doc_login = document.getElementById('id01');
-    doc_login.style.display = "block";
-}
+//     var doc_login = document.getElementById('id01');
+//     doc_login.style.display = "block";
+// }
 
 
-var modal = document.getElementById('id01');
+// var modal = document.getElementById('id01');
 
-// // When the user clicks anywhere outside of the modal, close it
-// window.onclick = function(event) {
-//     if (event.target == modal) {
-//         modal.style.display = "none";
-//     }
+// // // When the user clicks anywhere outside of the modal, close it
+// // window.onclick = function(event) {
+// //     if (event.target == modal) {
+// //         modal.style.display = "none";
+// //     }
+// // }
+
+
+
+
+
+// function check_login (){
+//      alert("hola")
+//     const userCont = document.getElementById('usuario');
+//     const user = userCont.innerHTML;
+//     console.log(userCont)
 // }
 
 
 
+// const userCont = document.querySelector('.a_home');
+// console.log(userCont);
 
-
-function check_login (){
-     alert("hola")
-    const userCont = document.getElementById('usuario');
-    const user = userCont.innerHTML;
-    console.log(userCont)
-}
-
-
-
-const userCont = document.querySelector('.a_home');
-console.log(userCont);
-
-console.log(userCont.classList)
+// console.log(userCont.classList)

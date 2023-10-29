@@ -181,6 +181,7 @@ footer	{
 /*	font-size: 0.4em;*/
 	color: white;
 	margin-top: 10px;
+	border-top: 1px solid var(--color-secundario);
 
 }
 
@@ -279,23 +280,40 @@ aside#nav_lateral{
 	grid-row: span 2;
 	display: grid;
 	grid-template-rows: 5% 25% 20% 50%;
-	gap:1px;
+	gap:0px;
+	border-right: 1px solid var(--color-secundario);
 	
 }
 
 div#btn_free, div#btn_premium{
 	display: flex;
 	flex-direction: column;
-	justify-content:start;
-	align-content: center;
+	justify-content:center;
+	align-items: center;
 	padding: 5px;
+}
 
+button.btn_aside{
+
+width: 70%;
+aspect-ratio: 2/1;
+font-size:1.1em;
+padding:2px;
+border-radius: 15px;
 
 }
+
+
+
+
+
+
+
 button{
 	margin:5px;
 	font-family: monospace;
 	cursor: pointer;
+
 }
 
 div#canvas{
@@ -317,12 +335,14 @@ div#canvas div{
 }*/
 
 div#publicidad{
-/*	background:violet;*/
-	border: 1px solid white;
+ border-top: 1px solid var(--color-secundario);
+ padding: 15px;
+	
 }
 
 div#publicidad legend{
 	text-align: center;
+	color:white;
 }
 
 .powerbi{
@@ -469,13 +489,12 @@ div#canvas div{
 
 
 
-	div.pr_rs{
+div.pr_rs{
 		
 		display:block;
 		place-items:center;
 		background: red;
-
-	}
+}
 
 
 

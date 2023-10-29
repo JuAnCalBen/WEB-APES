@@ -65,15 +65,16 @@ Esto es zona de comentarios
 	  	<aside   id="nav_lateral">
 	  		<div id="nav_s" class="item"></div>
 	  		<div id="btn_free" class="item"> 
-	  			<button onclick ="active_canvas('user_stats')">User Stats</button>
-	  			<button onclick ="active_canvas('user_games')">User Games</button>
-	  			<button onclick ="active_canvas('pro_stats')">Pro Stats</button>
+	  			<button class="btn_aside" onclick ="active_canvas('user_stats')">User Stats</button>
+	  			<button class="btn_aside" onclick ="active_canvas('user_games')">User Games</button>
+	  			<br>
+	  			<button  class="btn_aside" onclick ="active_canvas('pro_stats')">Pro Stats</button>
 
-	  			<button onclick ="active_canvas('pro_games')">Pro Games</button>
+	  			<button  class="btn_aside" onclick ="active_canvas('pro_games')">Pro Games</button>
 	  		</div>
 
 	  	 	<div id="btn_premium" class="item">
-	  			<button onclick ="active_canvas('predictions')">Pro Games predictions</button>
+	  			<button  class="btn_aside" onclick ="active_canvas('predictions')">Pro Games predictions</button>
 	  		</div>
 	  	
 	  		 
@@ -115,36 +116,7 @@ Esto es zona de comentarios
 		</div>
 	</div>
 	
-	<div id="id01" class="modal">
-  
-  		 <!-- <form class="modal-content animate" action="/action_page.php" method="post">  -->
-  		
-   		<form class="modal-content animate" >
-    		<div class="imgcontainer">
-      			<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>  
-      			<img src="IMG/logoApes.svg" alt="Logo" class="logo_login">
-    		</div>
-
-    		<div class="container">
-      			<!-- <label for="uname"><b>Username</b></label> -->
-      			<input type="text" placeholder="Enter Username" name="uname" required>
-
-      			<!-- <label for="psw"><b>Password</b></label> -->
-      			<input type="password" placeholder="Enter Password" name="psw" required>
-        
-      			<button type="submit">Login</button>
-      			<!-- <label>
-        		<input type="checkbox" checked="checked" name="remember"> Remember me
-      			</label> -->
-    		</div>
-
-    		<div class="container" style="background-color:#f1f1f1">
-      			<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      			<span class="psw">Forgot <a href="#">password?</a></span>
-    		</div>
-  		</form>
-
-	</div>
+	
 
 
 </div>	
