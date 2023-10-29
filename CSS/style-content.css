@@ -37,7 +37,8 @@ La clave de responsive design es que no aparezca la barra horizontal de
 
 
 :root {
-  --color-primario: #62758A; 
+/*  --color-primario: #62758A; */
+	--color-primario: #042444;
   --color-secundario: #E9ECED;
   --color-terciario: #042444;
 }
@@ -93,16 +94,19 @@ header	{
 
 div#branding{
 /*  background: var(--color-primario);*/
+	position:relative;
 	display: flex;
 	flex-direction:row;
 	justify-content: space-evenly;
 }
 
+
+
 header nav{
 /*	background: pink;*/
 	height: 100%;
-/*	display:grid;
-	place-items: center; */
+	display:grid;
+	place-items: start; */
 
 }
 
@@ -120,12 +124,12 @@ header nav  ul{
 
 	header nav   ul li{
 		display: inline-block;
-		font-size: 1.2em;
+		font-size: 1.8em;
 		font-family: monospace;
 		width: 70px;
 		margin: 0px 0px;
 		position: relative;
-		top: 1em;
+		top: 2em;
 	}
 
 
@@ -140,7 +144,8 @@ header nav  ul{
 
 
 img#logo{
-	height: 40px;
+	height: 80px;
+	border-radius:40px;
 	width: auto;
 	align-self:center;
 /*	aspect-ratio: 1/1;*/
@@ -152,16 +157,24 @@ a{
 }
 
 
-div#branding a h1{
+div#branding a h1#nombre_empresa{
 	margin:0px;
-	font-size:2em;
+	position: absolute;
+	left:50%;
+	top:25%;
+	font-size: 3em; 
 }
+
+
+
+
+
 
 
 
 footer	{
 	
-	background: var(--color-secundario);
+	background: var(--color-primario);
 	display: flex;
 	flex-direction: row;
 	font-family: arial;
