@@ -407,7 +407,7 @@ img#logo_landing{
 
 
 
- h1#texto_landing{
+ h2#texto_landing{
  	font-family: var(--fuente-titulo);
 	color: var(--color-secundario);
 	font-size: 2em;
@@ -708,3 +708,21 @@ span.psw {
 
 
 
+/*h2{
+	
+	display: block;
+	white-space: nowrap;
+	border-right: 4px solid;
+	width: 12ch;
+	animation: typing 2s steps(12),
+				blink 0.5s infinite step-end alternate;
+	overflow: hidden;
+}
+
+@keyframes typing {
+	from {width: 0}
+}
+
+@keyframes blink{
+	50% (border-color: transparent)
+}*/
