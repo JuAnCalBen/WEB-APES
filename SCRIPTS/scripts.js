@@ -12,7 +12,7 @@ function active_canvas  (ide) {
            
     }
     var elemento = document.getElementById(ide);
-    elemento.style.display="block"
+    elemento.style.display="grid"
     
 }
 
