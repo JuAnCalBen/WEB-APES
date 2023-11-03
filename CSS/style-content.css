@@ -73,7 +73,7 @@ La clave de responsive design es que no aparezca la barra horizontal de
 
 body{
 	background: var(--color-primario);
-	font-size: 16px;
+	font-size: 14px;
 	font-family: var(--fuente-texto), sans-serif;
 	position: relative;
 	overflow: hidden;
@@ -118,6 +118,7 @@ div#branding{
 	display: flex;
 	flex-direction:row;
 	justify-content: space-evenly;
+
 }
 
 
@@ -199,7 +200,7 @@ footer	{
 	display: flex;
 	flex-direction: row;
 	font-family: var(--fuente-texto);
-/*	font-size: 0.4em;*/
+
 	color: white;
 	margin-top: 10px;
 	border-top: 1px solid var(--color-secundario);
@@ -209,14 +210,10 @@ footer	{
 
 footer p#copyright{
 	
-	margin-left: 2px;
+	margin-left: 4px;
 	}
 
-	footer p#who{
-	position: absolute;
-	right: 10px;
-	color:white;
-}
+	
 
 
 #footer_middle{
@@ -439,124 +436,8 @@ font-family: var(--fuente-titulo);
 
 
 
-table#panel_resultados{
-	width:80%;
-	height: auto;
-	border-collapse: collapse;
-	margin-top:20px;
-	margin-left:20px;
-}
-
-table tr{
-	height: 70px;
-	background: #333;
-	font-family: var(--fuente-texto);
-}
-
-.table_titulo{
-		height:40px;
-		font-size: 1.1em;
-		color: white;
-		font-family: 'Open Sans', sans-serif;
-		background: #AD5129;
-		font-weight: bold;
-		text-align: center;
-		border-bottom: 2px solid white;
-	}
-
-	td.col1 {
-		width: 5%;
-		padding:5px;
-		margin:2px;
-
-	}
-
-	td.col2 {
-		width: 5%;
-		color:white;
-		font-size:0.8em;
-		padding:2px;
-	}
-
-	td.col3 {
-		width: 10%;
-		color:white;
-		font-size:0.8em;
-		padding:2px;
-	}
-
-	td.col4 {
-		width: 15%;
-		color:white;
-		font-size:1em;
-		padding:2px;
-		text-align:center;
-	}
-
-	td.col5 {
-		width: 15%;
-		color:white;
-		font-size:0.8em;
-		padding:2px;
-		text-align:center;
-	}
-
-	td.col6 {
-		width: 40%;
-		color:white;
-	
-	}
-
-	td.brd_gs {
-		border-bottom: 1px solid #808080;
-	}
 
 
-	.worlds{
-		background-image: url(https://cdn.pandascore.co/images/league/image/297/220px-Worlds_2020.png);
-		background-repeat: no-repeat;
-		background-size: contain;
-	}
-
-
-	.bds{
-		background-image: url(https://cdn.pandascore.co/images/team/image/128267/team_bd_slogo_square.png);
-		background-repeat: no-repeat;
-		background-size: contain;
-	}
-
-	.gg{
-		background-image: url(https://cdn.pandascore.co/images/team/image/1535/1200px_goldenguardians_logo.svg.png);
-		background-repeat: no-repeat;
-		background-size: contain;
-	}
-
-
-	.ctbc{
-		background-image: url(https://cdn.pandascore.co/images/team/image/130355/ctbc_flying_oysterlogo_square.png);
-		background-repeat: no-repeat;
-		background-size: contain;
-	}
-
-.deto{
-		background-image: url(https://cdn.pandascore.co/images/team/image/89/detonation-focusme-fpnjh4v7.png);
-		background-repeat: no-repeat;
-		background-size: contain;
-	}
-
-
-.talon{
-		background-image: url(https://cdn.pandascore.co/images/team/image/126702/220px_psg_talonlogo_square.png);
-		background-repeat: no-repeat;
-		background-size: contain;
-	}
-
-
-.movistar{
-		background-image: url(https://cdn.pandascore.co/images/team/image/132496/movistar_r7logo_square.png);
-		background-repeat: no-repeat;
-		background-size: contain;
-	}
 
 
 
@@ -618,111 +499,33 @@ img.logo_login{
 }
 
 
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
+
+@media screen and (min-width: 1600px){
+
+
+	body{
+		font-size: 20px;
+	}
+
+	img#logo{
+		height: 8vh;
+		border-radius:80px;
+		width: auto;
+	}	
+
+	footer p#copyright{
+		margin-left: 10px;
+		font-size:1.4em;
+	}
+
+	p.text_footer{
+		margin-left: 14px;
+		 
 }
 
-.imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
-  position: relative;
-}
-
-.container {
-  padding: 16px;
-}
-
-span.psw {
-  float: right;
-  padding-top: 16px;
-}
-
-
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  padding-top: 60px;
+	footer p  a{
+	  font-size: 1.4em;
 }
 
 
-.modal-content {
-  background-color: #fefefe;
-  margin: 5px auto 10% auto; /* 5% from the top, 15% from the bottom and centered */
-  border: 1px solid #888;
-  width: 30%; /* Could be more or less, depending on screen size */
-
 }
-
-
-.close {
-  position: absolute;
-  right: 25px;
-  top: 0;
-  color: #000;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-
-.close:hover,
-.close:focus {
-  color: red;
-  cursor: pointer;
-}
-
-/* Add Zoom Animation */
-.animate {
-  -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s
-}
-
-@-webkit-keyframes animatezoom {
-  from {-webkit-transform: scale(0)} 
-  to {-webkit-transform: scale(1)}
-}
-  
-@keyframes animatezoom {
-  from {transform: scale(0)} 
-  to {transform: scale(1)}
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-     display: block;
-     float: none;
-  }
-  .cancelbtn {
-     width: 100%;
-  }
-
-
-
-/*h2{
-	
-	display: block;
-	white-space: nowrap;
-	border-right: 4px solid;
-	width: 12ch;
-	animation: typing 2s steps(12),
-				blink 0.5s infinite step-end alternate;
-	overflow: hidden;
-}
-
-@keyframes typing {
-	from {width: 0}
-}
-
-@keyframes blink{
-	50% (border-color: transparent)
-}*/
